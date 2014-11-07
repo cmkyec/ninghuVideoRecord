@@ -1,0 +1,17 @@
+1. gentech_record 使用说明
+./gentech_record streamPath videoFilePath logFilePath
+@streamPath 指向视频流的地址，   例如 rtsp://168.168.15.78/HD
+                                 例如 udp://224.2.1.200:11112
+@videoFilePath 所要存储录像的文件路径，例如  ./2014_11_05_09_30_12_1150+899S.avi
+                                       例如  /record/test/2014_11_05_09_30_12_1150+899S.avi
+@logFilePath 记录运行出错日志的文件路径 例如 ./1150+800S.log
+
+2. yaao_record 使用说明
+./yaao_record localIP multiIP multiPort devicePort videoFilePath logFilePath
+@localIP 本机的IP地址， 例如  168.168.11.52
+@multiIP 摄像机视频流转发组播的IP地址  例如： 227.168.165.3
+@multiPort 摄像机视频流转发组播的端口  目前固定为 9000
+@devicePort 摄像机视频流在转发服务器上关联的端口，根据其他文档获取
+@videoFilePath 所要存储录像的文件路径，例如  ./2014_11_05_09_30_12_1150+899S.avi
+                                       例如  /record/test/2014_11_05_09_30_12_1150+899S.avi
+@logFilePath 记录运行出错日志的文件路径 例如 ./1150+800S.log
